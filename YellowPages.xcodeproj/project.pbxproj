@@ -12,6 +12,11 @@
 		49C366E5275DAF350030D432 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366E4275DAF350030D432 /* Measurements.swift */; };
 		49C366E8275DB2F90030D432 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366E7275DB2F90030D432 /* BackgroundView.swift */; };
 		49C366EB275DB3D80030D432 /* HealthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366EA275DB3D80030D432 /* HealthProvider.swift */; };
+		49C366ED275DB6E40030D432 /* AppAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366EC275DB6E40030D432 /* AppAssets.swift */; };
+		49C366F0275DB9EB0030D432 /* SearchLandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366EF275DB9EA0030D432 /* SearchLandingViewModel.swift */; };
+		49C366F2275DBB980030D432 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366F1275DBB980030D432 /* SearchBar.swift */; };
+		49C366F4275DC70F0030D432 /* SearchLandingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366F3275DC70F0030D432 /* SearchLandingData.swift */; };
+		49C366F7275EB6FD0030D432 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366F6275EB6FC0030D432 /* Buttons.swift */; };
 		E4102849275D9D77002E69BD /* YellowPagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4102848275D9D77002E69BD /* YellowPagesApp.swift */; };
 		E410284B275D9D77002E69BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E410284A275D9D77002E69BD /* ContentView.swift */; };
 		E410284D275D9D79002E69BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E410284C275D9D79002E69BD /* Assets.xcassets */; };
@@ -48,6 +53,12 @@
 		49C366E4275DAF350030D432 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
 		49C366E7275DB2F90030D432 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		49C366EA275DB3D80030D432 /* HealthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProvider.swift; sourceTree = "<group>"; };
+		49C366EC275DB6E40030D432 /* AppAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssets.swift; sourceTree = "<group>"; };
+		49C366EF275DB9EA0030D432 /* SearchLandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLandingViewModel.swift; sourceTree = "<group>"; };
+		49C366F1275DBB980030D432 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = YellowPages/ViewModel/Search/SearchBar.swift; sourceTree = SOURCE_ROOT; };
+		49C366F3275DC70F0030D432 /* SearchLandingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLandingData.swift; sourceTree = "<group>"; };
+		49C366F5275DCE770030D432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		49C366F6275EB6FC0030D432 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Buttons.swift; path = YellowPages/Model/AppData/Buttons.swift; sourceTree = SOURCE_ROOT; };
 		E4102845275D9D77002E69BD /* YellowPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YellowPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4102848275D9D77002E69BD /* YellowPagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowPagesApp.swift; sourceTree = "<group>"; };
 		E410284A275D9D77002E69BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,8 +120,17 @@
 			isa = PBXGroup;
 			children = (
 				49C366EA275DB3D80030D432 /* HealthProvider.swift */,
+				49C366F3275DC70F0030D432 /* SearchLandingData.swift */,
 			);
 			path = AppData;
+			sourceTree = "<group>";
+		};
+		49C366EE275DB9D60030D432 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				49C366EF275DB9EA0030D432 /* SearchLandingViewModel.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		E410283C275D9D77002E69BD = {
@@ -136,6 +156,7 @@
 		E4102847275D9D77002E69BD /* YellowPages */ = {
 			isa = PBXGroup;
 			children = (
+				49C366F5275DCE770030D432 /* Info.plist */,
 				E4102879275D9F31002E69BD /* Components */,
 				E4102878275D9E95002E69BD /* Utilities */,
 				E4102872275D9D99002E69BD /* Model */,
@@ -193,6 +214,7 @@
 		E4102874275D9DAA002E69BD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				49C366EE275DB9D60030D432 /* Search */,
 				49C366DF275DA5C70030D432 /* TestVM.swift */,
 			);
 			path = ViewModel;
@@ -231,6 +253,7 @@
 				E410287E275D9FB3002E69BD /* Icons.swift */,
 				E4102880275D9FD6002E69BD /* Fonts.swift */,
 				49C366E4275DAF350030D432 /* Measurements.swift */,
+				49C366EC275DB6E40030D432 /* AppAssets.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -238,6 +261,8 @@
 		E410287B275D9F7F002E69BD /* Outlets */ = {
 			isa = PBXGroup;
 			children = (
+				49C366F1275DBB980030D432 /* SearchBar.swift */,
+				49C366F6275EB6FC0030D432 /* Buttons.swift */,
 			);
 			path = Outlets;
 			sourceTree = "<group>";
@@ -378,9 +403,14 @@
 				E410284B275D9D77002E69BD /* ContentView.swift in Sources */,
 				E410287D275D9FA7002E69BD /* Colors.swift in Sources */,
 				E4102877275D9DDA002E69BD /* SearchLandingScreen.swift in Sources */,
+				49C366ED275DB6E40030D432 /* AppAssets.swift in Sources */,
+				49C366F7275EB6FD0030D432 /* Buttons.swift in Sources */,
+				49C366F2275DBB980030D432 /* SearchBar.swift in Sources */,
 				E410287F275D9FB3002E69BD /* Icons.swift in Sources */,
 				E4102881275D9FD6002E69BD /* Fonts.swift in Sources */,
 				49C366E3275DAD510030D432 /* HealthProviderQS.swift in Sources */,
+				49C366F0275DB9EB0030D432 /* SearchLandingViewModel.swift in Sources */,
+				49C366F4275DC70F0030D432 /* SearchLandingData.swift in Sources */,
 				49C366E5275DAF350030D432 /* Measurements.swift in Sources */,
 				E4102849275D9D77002E69BD /* YellowPagesApp.swift in Sources */,
 			);
@@ -546,9 +576,12 @@
 				DEVELOPMENT_TEAM = 8LFL44N4ND;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YellowPages/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EdTos;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -560,7 +593,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -575,9 +608,12 @@
 				DEVELOPMENT_TEAM = 8LFL44N4ND;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YellowPages/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EdTos;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -589,7 +625,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

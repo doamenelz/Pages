@@ -20,6 +20,8 @@ struct HealthProviderQS: View {
                     .modifier(BoldFont(font: .label))
                     .foregroundColor(.black2)
                 Text(bodyCopy)
+                    .lineLimit(nil)
+                    .multilineTextAlignment(.leading)
                     .lineSpacing(Dimensions.lineSpacing)
                     .modifier(RegularFont(font: .label))
                     .foregroundColor(.gray3)
