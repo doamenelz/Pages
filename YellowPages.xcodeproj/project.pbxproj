@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49C366E0275DA5C70030D432 /* TestVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366DF275DA5C70030D432 /* TestVM.swift */; };
+		49C366E3275DAD510030D432 /* HealthProviderQS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366E2275DAD510030D432 /* HealthProviderQS.swift */; };
+		49C366E5275DAF350030D432 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366E4275DAF350030D432 /* Measurements.swift */; };
+		49C366E8275DB2F90030D432 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366E7275DB2F90030D432 /* BackgroundView.swift */; };
+		49C366EB275DB3D80030D432 /* HealthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366EA275DB3D80030D432 /* HealthProvider.swift */; };
 		E4102849275D9D77002E69BD /* YellowPagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4102848275D9D77002E69BD /* YellowPagesApp.swift */; };
 		E410284B275D9D77002E69BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E410284A275D9D77002E69BD /* ContentView.swift */; };
 		E410284D275D9D79002E69BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E410284C275D9D79002E69BD /* Assets.xcassets */; };
@@ -38,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49C366DF275DA5C70030D432 /* TestVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestVM.swift; path = ../../../financePlanner/FinancePlanner/Models/General/TestVM.swift; sourceTree = "<group>"; };
+		49C366E2275DAD510030D432 /* HealthProviderQS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProviderQS.swift; sourceTree = "<group>"; };
+		49C366E4275DAF350030D432 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
+		49C366E7275DB2F90030D432 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		49C366EA275DB3D80030D432 /* HealthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProvider.swift; sourceTree = "<group>"; };
 		E4102845275D9D77002E69BD /* YellowPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YellowPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4102848275D9D77002E69BD /* YellowPagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowPagesApp.swift; sourceTree = "<group>"; };
 		E410284A275D9D77002E69BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +89,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49C366E1275DAD150030D432 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				49C366E2275DAD510030D432 /* HealthProviderQS.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		49C366E6275DB2E50030D432 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				49C366E7275DB2F90030D432 /* BackgroundView.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		49C366E9275DB3C10030D432 /* AppData */ = {
+			isa = PBXGroup;
+			children = (
+				49C366EA275DB3D80030D432 /* HealthProvider.swift */,
+			);
+			path = AppData;
+			sourceTree = "<group>";
+		};
 		E410283C275D9D77002E69BD = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +177,7 @@
 		E4102872275D9D99002E69BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				49C366E9275DB3C10030D432 /* AppData */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +193,7 @@
 		E4102874275D9DAA002E69BD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				49C366DF275DA5C70030D432 /* TestVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -180,6 +216,8 @@
 		E4102879275D9F31002E69BD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				49C366E6275DB2E50030D432 /* Global */,
+				49C366E1275DAD150030D432 /* Search */,
 				E410287B275D9F7F002E69BD /* Outlets */,
 				E410287A275D9F78002E69BD /* Design */,
 			);
@@ -192,6 +230,7 @@
 				E410287C275D9FA7002E69BD /* Colors.swift */,
 				E410287E275D9FB3002E69BD /* Icons.swift */,
 				E4102880275D9FD6002E69BD /* Fonts.swift */,
+				49C366E4275DAF350030D432 /* Measurements.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -333,11 +372,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C366E8275DB2F90030D432 /* BackgroundView.swift in Sources */,
+				49C366E0275DA5C70030D432 /* TestVM.swift in Sources */,
+				49C366EB275DB3D80030D432 /* HealthProvider.swift in Sources */,
 				E410284B275D9D77002E69BD /* ContentView.swift in Sources */,
 				E410287D275D9FA7002E69BD /* Colors.swift in Sources */,
 				E4102877275D9DDA002E69BD /* SearchLandingScreen.swift in Sources */,
 				E410287F275D9FB3002E69BD /* Icons.swift in Sources */,
 				E4102881275D9FD6002E69BD /* Fonts.swift in Sources */,
+				49C366E3275DAD510030D432 /* HealthProviderQS.swift in Sources */,
+				49C366E5275DAF350030D432 /* Measurements.swift in Sources */,
 				E4102849275D9D77002E69BD /* YellowPagesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

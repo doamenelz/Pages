@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
+
+
+enum HealthProviderClassificationIcon : String {
+    case dispensaries = "dispensaries"
+    case paramedical = "paramedical"
+    case primaryCare = "primaryCare"
+    case specialists = "specialists"
+}
