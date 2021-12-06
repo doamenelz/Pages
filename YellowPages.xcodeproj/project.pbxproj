@@ -16,6 +16,7 @@
 		49C366F0275DB9EB0030D432 /* SearchLandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366EF275DB9EA0030D432 /* SearchLandingViewModel.swift */; };
 		49C366F2275DBB980030D432 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366F1275DBB980030D432 /* SearchBar.swift */; };
 		49C366F4275DC70F0030D432 /* SearchLandingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366F3275DC70F0030D432 /* SearchLandingData.swift */; };
+		49C366F7275EB6FD0030D432 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C366F6275EB6FC0030D432 /* Buttons.swift */; };
 		E4102849275D9D77002E69BD /* YellowPagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4102848275D9D77002E69BD /* YellowPagesApp.swift */; };
 		E410284B275D9D77002E69BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E410284A275D9D77002E69BD /* ContentView.swift */; };
 		E410284D275D9D79002E69BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E410284C275D9D79002E69BD /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		49C366F1275DBB980030D432 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = YellowPages/ViewModel/Search/SearchBar.swift; sourceTree = SOURCE_ROOT; };
 		49C366F3275DC70F0030D432 /* SearchLandingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLandingData.swift; sourceTree = "<group>"; };
 		49C366F5275DCE770030D432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		49C366F6275EB6FC0030D432 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Buttons.swift; path = YellowPages/Model/AppData/Buttons.swift; sourceTree = SOURCE_ROOT; };
 		E4102845275D9D77002E69BD /* YellowPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YellowPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4102848275D9D77002E69BD /* YellowPagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowPagesApp.swift; sourceTree = "<group>"; };
 		E410284A275D9D77002E69BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				49C366F1275DBB980030D432 /* SearchBar.swift */,
+				49C366F6275EB6FC0030D432 /* Buttons.swift */,
 			);
 			path = Outlets;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				E410287D275D9FA7002E69BD /* Colors.swift in Sources */,
 				E4102877275D9DDA002E69BD /* SearchLandingScreen.swift in Sources */,
 				49C366ED275DB6E40030D432 /* AppAssets.swift in Sources */,
+				49C366F7275EB6FD0030D432 /* Buttons.swift in Sources */,
 				49C366F2275DBB980030D432 /* SearchBar.swift in Sources */,
 				E410287F275D9FB3002E69BD /* Icons.swift in Sources */,
 				E4102881275D9FD6002E69BD /* Fonts.swift in Sources */,
